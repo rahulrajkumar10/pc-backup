@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="tank" id="tank">
+            <div class="tankcol" id ="tankcol"></div>
+        </div>
+        <div class="pipe"></div>
+        <div class="tap">
+            <button id="btnn" onclick="changer()"></button>
+            <div class="smalltap"></div>
+            <div class="water" id="water"></div>
+        </div>
+    </div>
+
+    <script>
+        function changer() {
+            var a = document.getElementById("btnn")
+            a.classList.toggle("red")
+            var b = document.getElementById("water")
+            b.classList.toggle("water")
+            b.classList.toggle("wat")
+            var c = document.getElementById("tankcol")
+            c.classList.toggle("tankcol")
+            c.classList.toggle("tankc")
+        }
+    
+    </script>
+</body>
+
+
+</html>
+
+<style>
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .tank {
+        height: 400px;
+        width: 300px;
+        background-color: aqua;
+        border: 2px solid black;
+        border-radius: 20px 20px 0px 0px;
+        line-height: 400px;
+    }
+    
+    .tankcol {
+        height: 400px;
+        width: 300px;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+        transition: height 3s ease;
+        position: relative;
+        z-index: 5;
+    
+    }
+    
+    .tankc {
+        height:0%
+    }
+    
+    .main {
+        display: flex;
+    }
+    
+    .pipe {
+        height: 10px;
+        background-color: brown;
+        width: 150px;
+        border: 2px solid black;
+        margin-top: 390px;
+    }
+    
+    .smalltap {
+        height: 50px;
+        background-color: brown;
+        width: 10px;
+    }
+    
+    .tap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 360px;
+        position: absolute;
+        margin-left: 450px;
+    }
+    
+    button {
+        width: 50px;
+        background-color: rgb(0, 255, 13);
+        margin-left: -18px;
+        height: 20px
+    }
+    
+    .smalltap {
+        border: 2px solid black;
+    }
+    
+    .red {
+        background-color: rgb(255, 0, 0);
+    }
+    
+    .water {
+        background-color: aqua;
+        height: 200px;
+        width: 0%;
+        transition: width 3s ease;
+    }
+    .wat{
+        width: 13px;
+        
+    }
+    
+</style>

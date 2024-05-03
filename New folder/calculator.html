@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="keys">
+
+            <div class="firstrow">
+            <button onclick="clearDisplay()"class="grey">AC</button>
+            <button onclick="deleteLastCharacter()"class="grey">DEL</button>
+            <button onclick="calculatePercentage()"class="grey">%</button>
+            <button onclick="appendToDisplay('/')"class="slash">/</button>
+        </div>
+
+        <div class="secondrow">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')"class="slash">*</button>
+        </div>
+
+        <div class="thirdrow">
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')"class="slash">-</button>
+        </div>
+
+        <div class="fourthrow">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')"class="slash">+</button>
+        </div>
+
+        <div class="fifthrow">
+            <button onclick="appendToDisplay('0')" class="zero">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()"class="slash">=</button>
+        </div>
+            
+        </div>
+    </div>
+    <script>
+        let display = document.getElementById('display');
+
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+
+        function clearDisplay() {
+            display.value = '';
+        }
+
+        function calculate() {
+            var expression = document.getElementById('display').value;
+            try {
+              var result = eval(expression);
+              document.getElementById('display').value = result;
+            } catch (error) {
+              alert('Invalid expression!');
+            }
+          }
+
+        function deleteLastCharacter() {
+            var displayValue = document.getElementById('display').value;
+            document.getElementById('display').value = displayValue.slice(0, -1);
+        }
+
+        function calculatePercentage() {
+            var displayValue = document.getElementById('display').value;
+            var result = parseFloat(displayValue) / 100;
+            document.getElementById('display').value = result;
+          }
+
+
+
+    </script>
+</body>
+
+</html>
+
+<style>
+    .calculator {
+        width: 250px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .keys {
+        margin-top: 10px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px;
+        border: none;
+        background-color: #5a5757;
+        border-radius: 50%;
+        color: #ccc;
+
+    }
+
+    button:hover {
+        background-color: #e0e0e0;
+        color: black;
+    }
+
+    input{
+        height: 7vh;
+        width: 35vh;
+        background-color: black;
+        border: none;
+        outline: none;
+        color: #ccc;
+        text-align: right;
+        font-size: 50px;
+        box-sizing: border-box;
+       
+    }
+
+    .firstrow {
+        display: flex;
+    }
+
+    .secondrow {
+        display: flex;
+    }
+
+    .thirdrow{
+        display: flex;
+    }
+
+    .fourthrow{
+        display: flex;
+    }
+
+    .fifthrow{
+        display: flex;
+    }
+
+    .zero{
+        width: 110px;
+        border-radius: 50px;
+    }
+
+    .slash{
+        background-color: orange;
+    }
+
+    .grey{
+        background-color: rgb(187, 185, 185);
+        color: black;
+    }
+</style>
