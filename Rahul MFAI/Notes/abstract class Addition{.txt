@@ -1,0 +1,30 @@
+abstract class Addition{
+	
+	abstract void add();
+	
+	public void sub()
+	{
+		System.out.println("Subraction");
+	}
+}
+
+abstract class ImplementedMethod extends Addition{
+	abstract void division();
+	public void multipy()
+	{
+		System.out.println("Multiplication");
+	}
+}	
+
+public class AbstractExample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+--> Addition
+	Subraction
+	Multiplication
+	Divison

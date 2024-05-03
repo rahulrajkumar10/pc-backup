@@ -1,0 +1,40 @@
+h1 {
+background-color: rgb(226, 210, 72);
+font-weight: bold;
+padding: 30px;
+margin-right: 1100px;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 10px;
+}
+
+span {
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+footer {
+padding: 10px;
+}
+
+body {
+    background-color: rgb(242, 204, 89);
+    text-align: left;
+}
+section {
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 10x;
+    margin-right: 10px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+
+}
