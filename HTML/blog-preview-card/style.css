@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+.maincontiner{
+    background-color: hsl(47, 88%, 63%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.cardcontainer{
+    background-color: white;
+    border-radius:15px;
+    height: 580px;
+    width: 394px;
+    margin: auto;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+.Illustrationimage{
+    border-radius: 10px;
+}
+
+.learning{
+    color: hsl(0, 0%, 7%);
+    background-color: hsl(47, 88%, 63%);
+    border-style: none;
+    width: 95px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px ;
+    margin-top: 15px;
+    font-family: "Figtree";
+}
+
+.publish_date{
+    color: hsl(0, 0%, 7%);
+    font-family: "Figtree";
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.topic_of_learning{
+    color: hsl(0, 0%, 7%);
+    font-family: "Figtree";
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description_topic{
+    color:hsl(0, 0%, 50%);
+    font-family: "Figtree";
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.author_image{
+    width:45px;
+    height:45px ;
+}
+.author_name{
+    color: hsl(0, 0%, 7%);
+    font-family: "Figtree";
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}

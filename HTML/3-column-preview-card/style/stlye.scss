@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Main-card {
+
+ 
+    .card-sub{
+        display: flex;   
+        padding: 0 20%;
+        border: 2px solid white;
+        justify-content: center; 
+        align-items: center;  
+        margin-top: 60px; 
+    .card-continer {
+        background-color: #e28525;
+        padding: 40px;
+        width: fit-content;
+      
+
+        &:nth-child(2){
+            background-color: #016972 !important;
+           p{
+            color: #91d5e0 !important;
+           }
+           a{
+            color: #016972 !important;
+
+           }
+        }
+        &:nth-child(3){
+            background-color: #00403f !important;
+           p{
+            color: #a4cdd0 !important;
+           }
+           a{
+            color: #00403f !important;
+
+           }
+        }
+
+        .card-image {
+            width: fit-content;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            
+            h1 {
+                color: white;
+                font-size: 36px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-top: 20px;
+            }
+            p{
+                color: #ffcb8f;
+                font-size: 16px;
+                font-family: Lexend Deca;
+                margin-top: 18px;
+            }
+            a{
+                text-decoration: none;
+                color: #cba376;
+                background-color: white;
+                border: 2px solid white;
+                border-radius: 18px;
+                margin-top: 70px;
+                text-align: center;
+                padding: 10px 15px;
+                width: fit-content;
+            }
+
+            
+        }
+
+    }
+    
+
+  
+
+    }
+
+    
+}
+
+
