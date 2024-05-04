@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasker</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Tasker </title>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Tasker</h1>
-    <p>please insert your informations to access your tasks</p>
-    <form id="loginForm">
-        <div class="p1">Email</div>
-      <input type="text" id="username" placeholder="Insert your email" required>
-      <div class="p1">Password</div>
-      <input type="password" id="password" placeholder="Insert your Password" required>
-      <label><input type="checkbox" id="rememberMe"> Remember Me</label>
-      <button type="submit">Login</button>
-    </form>
-    <a href="#" id="forgotPassword">Sign Up?</a>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="total">
+
+        <div class="image">
+            <img src="./notepad.png" alt="task">
+        </div>
+
+        <div class="content">
+
+            <div class="text">
+                
+                <div class="top">
+                    <h1>Welcome to Tasker</h1>
+                    <p>Please, insert your informations to access your tasks</p>
+                </div>
+
+                <div class="email">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Insert your email" id="originalEmail">
+                </div>
+
+                <div class="password">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Insert your password" id="originalPassword">
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox">
+                    <p>Remember me</p>
+                </div>
+
+                <button onclick="checking()">Sign in</button>
+
+                <div class="signup">
+                    <P>Don't have an account? <span><a href="">Sign up</a></span></P>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-

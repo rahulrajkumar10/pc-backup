@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo">
+                <img src="./notepad.png" alt="tsk">
+            </div>
+            <div class="buttons">
+                <button class="task"><img src="./WhatsApp Image 2024-05-03 at 11.31.24_b11d807b.jpg" alt="">Tasks</button>
+                <button class="categories"><img src="./WhatsApp Image 2024-05-03 at 11.31.24_e77c07fb.jpg" alt="">Categories <img
+                        src="./WhatsApp Image 2024-05-03 at 11.31.25_e43a20dc.jpg" alt=""></button>
+                <button class="settings"><img src="./WhatsApp Image 2024-05-03 at 11.31.26_4b5ef25a.jpg" alt="">Settings</button>
+                <button class="logout"> <img src="./WhatsApp Image 2024-05-03 at 11.31.25_59295464.jpg" alt="">Logout</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="title">All your Tasks</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .left {
+        height: 100vh;
+        width: 25%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 150px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        button {
+            background-color: rgb(252, 251, 250);
+            width: 150px;
+            border-radius: 8px;
+            margin-left: -20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+
+            }
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+            }
+        }
+
+        .settings {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+
+
+            }
+        }
+
+        .logout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+            margin-top: 200px;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 0px;
+
+            }
+        }
+    }
+
+    .right {
+        width: 75%;
+        text-align: center;
+        background-color: rgb(195, 195, 195);
+    }
+
+    .title {
+        font-weight: bolder;
+        font-size: 40px;
+    }
+</style>
